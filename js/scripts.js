@@ -18,7 +18,6 @@ Pizzas.prototype.price = function() {
 
   return (cost);
 
-
 }
 
 $(document).ready(function() {
@@ -31,14 +30,11 @@ $(document).ready(function() {
           pizzaToppings.push(toppingsTotal);
         });
 
-
     var pizzaSize = $("select#size").val();
 
     var pizzaCost = new Pizzas(pizzaSize, pizzaToppings);
 
     alert("YOUR TOTAL" + " " + "$" + (pizzaCost.price()));
-
-
 
   });
 });
