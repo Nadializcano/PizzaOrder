@@ -32,7 +32,7 @@ $(document).ready(function() {
         });
 
 
-    var pizzaSize = $("input:checkbox[name=size]:checked").val();
+    var pizzaSize = $("input:radio[name=size]:checked").val();
 
     var pizzaCost = new Pizzas(pizzaSize, pizzaToppings);
 
