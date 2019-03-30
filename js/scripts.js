@@ -6,9 +6,9 @@ function Pizzas(size, topping) {
 
 Pizzas.prototype.price = function() {
   var cost = 0;
-  if (this.size === "small") {
+  if (this.size === "Small") {
    cost += 8;
- } else if (this.size === "medium") {
+ } else if (this.size === "Medium") {
    cost += 12;
  } else {
    cost += 14;
@@ -32,11 +32,12 @@ $(document).ready(function() {
         });
 
 
-    var pizzaSize = $("input:radio[name=size]:checked").val();
+    var pizzaSize = $("select#size").val();
 
     var pizzaCost = new Pizzas(pizzaSize, pizzaToppings);
 
-    $('#price').text(pizzaCost.price());
+    alert("YOUR TOTAL" + " " + "$" + (pizzaCost.price()));
+
 
 
   });

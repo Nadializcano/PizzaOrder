@@ -16,14 +16,15 @@
 
     <form id="pizza">
 
-        <p>→Pizza Size</p>
+        <p>→Choos your Pizza Size</p>
         <div class="options">
 
-        <div class="radio">
-        <input type="radio" name="size" value="small">Small
-        <input type="radio" name="size" value="medium">Medium
-        <input type="radio" name="size" value="large">Large
-        </div>
+        <select id="size" class="form-control">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+
+        </select>
         </div>
 
 
@@ -45,8 +46,10 @@
       <button type="submit" class="btn btn-black">Order</button>
     </form>
 
-    <span id="price"></span>
+    
     </div>
+
+
 
   </body>
 </html>
