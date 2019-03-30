@@ -2,3 +2,33 @@ body {
   background-image: url(../img/pizza3.jpg);
   background-size: cover;
 }
+
+.page {
+  position: absolute;
+    top: auto;
+    left: 13.5vw;
+    bottom: 8vw;
+    font-size: 38px;
+    font-family: Helvetica;
+    text-shadow:
+          0.01em 0 gray,
+          0 0.01em gray,
+          -0.01em 0 gray,
+          0 -0.01em gray;
+}
+
+p {
+  color: white;
+
+  text-shadow:
+        0.01em 0 gray,
+        0 0.01em gray,
+        -0.01em 0 gray,
+        0 -0.01em gray;
+}
+
+.options {
+  font-size: 20px;
+}
+
+.btn-black{background-color:#cccccc;color: #FFF;}
