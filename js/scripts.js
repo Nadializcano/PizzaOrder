@@ -14,7 +14,7 @@ Pizzas.prototype.price = function() {
    cost += 14;
  }
 
-  cost += this.topping;
+  cost += (this.topping.length * 2);
 
   return (cost);
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
   $('form#pizza').submit(function(event) {
     event.preventDefault();
 
-    var pizzaToppings = [];
+    var pizzaToppings = []
         $("input:checkbox[name=chooseTopping]:checked").each(function(){
           var toppingsTotal = $(this).val();
           pizzaToppings.push(toppingsTotal);
