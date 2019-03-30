@@ -5,13 +5,19 @@ function Pizzas(size, topping) {
 }
 
 Pizzas.prototype.price = function() {
-  var pizzaSizeFinal = this.size;
-  }
+  var cost = 0;
+  if (this.size === "small") {
+   cost += 8;
+ } else if (this.size === "medium") {
+   cost += 12;
+ } else {
+   cost += 14;
+ }
 
-  pizzaSizeFinal += this.topping;
+  cost += this.topping;
 
-  return (pizzaSizeFinal);
-  
+  return (cost);
+
 
 }
 
